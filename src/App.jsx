@@ -6,6 +6,7 @@ import FinancialSummaryCard from './components/FinancialSummaryCard';
 import PaymentChart from './components/PaymentChart';
 import PaymentSchedule from './components/PaymentSchedule';
 import SavedScenarios from './components/SavedScenarios';
+import HdbResaleDashboard from './components/HdbResaleDashboard';
 import './App.css';
 
 export default function App() {
@@ -66,6 +67,9 @@ export default function App() {
 
         {/* Amortization Schedule */}
         <PaymentSchedule schedule={schedule} />
+
+        {/* HDB Resale Market */}
+        <HdbResaleDashboard budget={inputs.propertyPrice} />
       </div>
     </div>
   );
